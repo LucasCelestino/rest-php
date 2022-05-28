@@ -4,8 +4,16 @@ namespace Validator;
 
 class RequestValidator
 {
-    public function __construct()
+
+    private $request;
+
+    public function __construct($request)
     {
-        echo 'Autoload da classe request validator';
+        $this->request = $request;
+    }
+
+    public function processRequest()
+    {
+        echo '...';
     }
 }
