@@ -7,7 +7,9 @@ use Util\RoutesUtil;
 
 try
 {
-    $validator = new RequestValidator(RoutesUtil::getRoutes());
+    $Requestvalidator = new RequestValidator(RoutesUtil::getRoutes());
+
+    $return = $Requestvalidator->processRequest();
 }
 catch (Exception $exception)
 {
