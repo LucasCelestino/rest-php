@@ -3,5 +3,13 @@
 include('bootstrap.php');
 
 use Validator\RequestValidator;
+use Util\RoutesUtil;
 
-$validator = new RequestValidator();
+try
+{
+    $validator = new RequestValidator(RoutesUtil::getRoutes());
+}
+catch (Exception $exception)
+{
+    echo $exception->getMessage();
+}
