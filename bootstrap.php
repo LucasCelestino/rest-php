@@ -7,7 +7,7 @@ error_reporting(E_ERROR);
 define('HOST', 'localhost');
 define('DATABASE', 'api');
 define('USER', 'root');
-define('PASSWORD', 'root');
+define('PASSWORD', '');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('DIR_APP', __DIR__);

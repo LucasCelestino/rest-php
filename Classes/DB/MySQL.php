@@ -98,7 +98,7 @@ class MySQL
     /**
      * @return object|PDO
      */
-    public function getDb()
+    public function getDb(): PDO
     {
         return $this->db;
     }

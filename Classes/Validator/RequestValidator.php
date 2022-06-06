@@ -42,5 +42,7 @@ class RequestValidator
         {
             $this->dataRequest = JsonUtil::processJsonBodyRequest();
         }
+        
+        $this->TokensAutorizadosRepository->validateToken(getallheaders()['Authorization']);
     }
 }
